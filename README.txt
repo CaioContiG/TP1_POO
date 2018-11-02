@@ -2,17 +2,17 @@
 Matrizes
 
 FAZER:
-Pegar numero de linhas e colunas
-Inicializar como identidade
-sobrecarga de ()
-Funçao que modifica elementos da matriz para 0
-sobrecarga de +
-sobrecarga de -
-sobrecarga de ~ (transposta)
-função que modifica elementos para 1
-sobrecarga de multiplicação por constante
-sobrecarga de multiplicação por matrizes
-verificador de igualdade if ==
-verigicador de desigualdade !=
-sobrecarga de <<
-sobregarga de >>
+Pegar numero de linhas e colunas A 
+Inicializar como identidade C
+sobrecarga de () A
+Funçao que modifica elementos da matriz para 0 C
+sobrecarga de + A
+sobrecarga de - C
+sobrecarga de ~ (transposta) A
+função que modifica elementos para 1 C
+sobrecarga de multiplicação por constante A
+sobrecarga de multiplicação por matrizes C
+verificador de igualdade if == A
+verigicador de desigualdade != C
+sobrecarga de << A
+sobregarga de >> C
