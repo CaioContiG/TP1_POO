@@ -4,9 +4,9 @@ Matrizes
 FAZER:
 (OK) Pegar numero de linhas e colunas A 
 Inicializar como identidade C
-sobrecarga de () A
+(OK) sobrecarga de () A
 Funçao que modifica elementos da matriz para 0 C
-sobrecarga de + A
+(Tá dando uns bug) sobrecarga de + A
 sobrecarga de - C
 sobrecarga de ~ (transposta) A
 função que modifica elementos para 1 C
