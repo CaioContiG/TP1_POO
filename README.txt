@@ -2,7 +2,7 @@
 Matrizes
 
 FAZER:
-Pegar numero de linhas e colunas A 
+(OK) Pegar numero de linhas e colunas A 
 Inicializar como identidade C
 sobrecarga de () A
 Funçao que modifica elementos da matriz para 0 C
