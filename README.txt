@@ -1,18 +1,25 @@
 # TP1_POO
 Matrizes
 
+ATENÇAO -A FUNCAO: Matriz(int l, int c, const double &valor) é: Matriz(int l, int c, const double &valor = 0)
+
 FAZER:
 (OK) Pegar numero de linhas e colunas A 
-Inicializar como identidade C
+(FIQUEI EM DUVIDA)Inicializar como identidade C
 (OK) sobrecarga de () A
-Funçao que modifica elementos da matriz para 0 C
+(OK)Funçao que modifica elementos da matriz para 0 C
 (Tá dando uns bug) sobrecarga de + A
-sobrecarga de - C
+(OK)sobrecarga de - C
 sobrecarga de ~ (transposta) A
-função que modifica elementos para 1 C
+(OK, MAS N FAZ SENTIDO SER IGUAL)função que modifica elementos para 1 C
 sobrecarga de multiplicação por constante A
-sobrecarga de multiplicação por matrizes C
+(OK)sobrecarga de multiplicação por matrizes C
 verificador de igualdade if == A
-verigicador de desigualdade != C
+(OK)verigicador de desigualdade != C
 sobrecarga de << A
-sobregarga de >> C
+(OK)sobregarga de >> C
+
+-------- mais esses pra fazer: ----
+(OK, mas tenho q testar fiquei com preguiça)sobrecarga -= C
+sobrecarga += A
+(OK, mas tenho q testar fiquei com preguiça) sobrecarga *= C
