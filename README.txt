@@ -10,7 +10,7 @@ FAZER:
 (OK)Funçao que modifica elementos da matriz para 0 C
 (Tá dando uns bug) sobrecarga de + A
 (OK)sobrecarga de - C
-sobrecarga de ~ (transposta) A
+(Tá dando uns bug) sobrecarga de ~ (transposta) A
 (OK, MAS N FAZ SENTIDO SER IGUAL)função que modifica elementos para 1 C
 sobrecarga de multiplicação por constante A
 (OK)sobrecarga de multiplicação por matrizes C
