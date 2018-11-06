@@ -14,7 +14,7 @@ FAZER:
 (OK, MAS N FAZ SENTIDO SER IGUAL)função que modifica elementos para 1 C
 (OK) sobrecarga de multiplicação por constante A
 (OK)sobrecarga de multiplicação por matrizes C
-verificador de igualdade if == A
+(OK) verificador de igualdade if == A
 (OK)verigicador de desigualdade != C
 sobrecarga de << A
 (OK)sobregarga de >> C
