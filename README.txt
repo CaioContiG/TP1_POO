@@ -12,7 +12,7 @@ FAZER:
 (OK)sobrecarga de - C
 (OK) sobrecarga de ~ (transposta) A
 (OK, MAS N FAZ SENTIDO SER IGUAL)função que modifica elementos para 1 C
-sobrecarga de multiplicação por constante A
+(OK) sobrecarga de multiplicação por constante A
 (OK)sobrecarga de multiplicação por matrizes C
 verificador de igualdade if == A
 (OK)verigicador de desigualdade != C
