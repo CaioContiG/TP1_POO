@@ -23,3 +23,17 @@ FAZER:
 (OK, mas tenho q testar fiquei com preguiça)sobrecarga -= C
 (OK)sobrecarga += A
 (OK, mas tenho q testar fiquei com preguiça) sobrecarga *= C
+
+
+
+DOCUMENTAÇÃO
+(OK) introdução A
+Compilação C
+Header C
+Construtores A
+Sobrecarga de Operadores C
+Get e set A
+tratamento de exceções A
+Main C
+
+Conclusão A
