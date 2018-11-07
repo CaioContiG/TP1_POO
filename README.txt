@@ -16,10 +16,10 @@ FAZER:
 (OK)sobrecarga de multiplicação por matrizes C
 (OK) verificador de igualdade if == A
 (OK)verigicador de desigualdade != C
-sobrecarga de << A
+(OK)sobrecarga de << A
 (OK)sobregarga de >> C
 
 -------- mais esses pra fazer: ----
 (OK, mas tenho q testar fiquei com preguiça)sobrecarga -= C
-sobrecarga += A
+(OK)sobrecarga += A
 (OK, mas tenho q testar fiquei com preguiça) sobrecarga *= C
