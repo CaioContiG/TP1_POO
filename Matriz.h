@@ -31,6 +31,10 @@ class Matriz
     private:
 
 };
+inline int Matriz::getRows(){return linhas;}
+
+inline int Matriz::getCols(){return colunas;}
+
 
 #endif // MATRIZ_H
 

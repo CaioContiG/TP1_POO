@@ -47,11 +47,8 @@ void Matriz::Print(){
                 cout << mat[i][j];
                 cout << " ";}}
 }
-int Matriz::getRows(){return linhas;}// testar como inline
 
-int Matriz::getCols(){return colunas;}// testar como inline
-
-int& Matriz::operator() (int lin,int col){return mat[lin-1][col-1];}// testar como inline
+int& Matriz::operator() (int lin,int col){return mat[lin-1][col-1];}
 
 Matriz &Matriz::operator=(const Matriz &a){
     this->linhas = a.linhas;
@@ -83,7 +80,7 @@ Matriz Matriz::operator+ (const Matriz &A)const{
 
         return C;
         }catch (const int error){
-        cout<<"Erro"<< error<<endl;}
+        cout<<"Erro, linha ou coluna"<< error<<endl;}
 }
 Matriz Matriz::operator~ (){
         Matriz A(colunas,linhas);
@@ -104,13 +101,16 @@ Matriz &Matriz::operator*= (const int& right){
    return *this;
 }
 Matriz &Matriz::operator+= (const Matriz &a){
-
+    try{if (a.linhas != linhas || a.colunas != colunas){
+        throw 01;
+            }
     for(int i = 0; i < linhas; i++){
         for(int j = 0; j<colunas; j++){
             this->mat[i][j] = mat[i][j] + a.mat[i][j];
         }
     }
-   return *this;
+   return *this;}catch(const int error){
+                cout<<"Erro, linha ou coluna"<< error<<endl;}
 
 }
 bool Matriz::operator ==(const Matriz &a){
