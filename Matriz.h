@@ -4,11 +4,11 @@
 using namespace std;
 
 class Matriz
-{
-    public:
+{   private:
         int linhas;
         int colunas;
         int **mat;
+    public:
         Matriz();
         Matriz(int l,int c,const double &valor=0);
         void Print();
@@ -16,9 +16,9 @@ class Matriz
         Matriz(const Matriz& other);
         int getRows();
         int getCols();
-        int& operator() (int lin,int col);
 
         //sobrecargas
+        int& operator() (int lin,int col);
         Matriz operator+ (const Matriz &A)const;
         Matriz operator~ ();
         Matriz &operator= (const Matriz &a);
@@ -27,8 +27,6 @@ class Matriz
         bool operator == (const Matriz &a);
         friend ostream& operator<< (ostream &out,const Matriz& a);
     protected:
-
-    private:
 
 };
 inline int Matriz::getRows(){return linhas;}

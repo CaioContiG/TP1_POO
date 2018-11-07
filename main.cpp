@@ -15,9 +15,9 @@ int main()
     Matriz x(li,co,p);
     Matriz z(li,co,h);
 
-    cout << x.getCols()<< endl;
+    cout <<"Colunas = " << x.getCols()<< endl;
 
-    cout << z.getRows();
+    cout <<"Linhas = "<< z.getRows();
 
     x(1,2) = 5;
     x.Print();
