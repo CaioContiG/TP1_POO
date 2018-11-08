@@ -30,7 +30,7 @@ DOCUMENTAÇÃO
 (OK) introdução A
 Compilação C
 Header C
-Construtores A
+(OK) Construtores A
 Sobrecarga de Operadores C
 (OK) Getters A
 (OK) tratamento de exceções A
