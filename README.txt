@@ -32,8 +32,8 @@ Compilação C
 Header C
 Construtores A
 Sobrecarga de Operadores C
-Get e set A
-tratamento de exceções A
+(OK) Getters A
+(OK) tratamento de exceções A
 Main C
 
 Conclusão A
