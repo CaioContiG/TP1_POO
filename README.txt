@@ -25,10 +25,11 @@ FAZER:
 (OK, mas tenho q testar fiquei com preguiça) sobrecarga *= C
 
 
-
+---- FALTA TESTAR NO MAIN O ~ E A *= POR CONSTANTE
 DOCUMENTAÇÃO
+
 (OK) introdução A
-Compilação C
+(OK)Compilação C
 Header C
 (OK) Construtores A
 Sobrecarga de Operadores C
