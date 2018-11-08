@@ -6,16 +6,19 @@ using namespace std;
 
 class Matriz
 {
-    public:
+    private:
         int **mat;
-
         int linhas;
         int colunas;
 
+    public:
         Matriz();
         Matriz(int l, int c, const double &valor=0);
         ~Matriz();
         Matriz(const Matriz& M);
+
+        int getRows();
+        int getCols();
 
         //funcoes
         void unit();
@@ -25,16 +28,22 @@ class Matriz
 
         //sobrecarga
         Matriz &operator= (const Matriz &a);
+        int& operator() (int lin,int col);
+
         const Matriz operator- (const Matriz &a) const;
         Matriz operator-= (const Matriz &a);
+
         const Matriz operator* (const Matriz &a) const;
         Matriz operator*= (const int &a);
+
         bool operator !=(const Matriz &a);
+
         friend istream& operator >>(istream &in, Matriz &a);
-
-    protected:
-
-    private:
 };
 
+inline int Matriz::getRows(){return linhas;}
+
+inline int Matriz::getCols(){return colunas;}
+
+inline int &Matriz::operator()(int lin,int col){return mat[lin-1][col-1];}
 #endif // MATRIZ_H

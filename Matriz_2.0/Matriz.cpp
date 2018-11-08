@@ -3,6 +3,7 @@
 #include <windows.h>
 using namespace std;
 
+//construtor 1
 Matriz::Matriz()
 {
    mat = new int*[0];
@@ -12,10 +13,9 @@ Matriz::Matriz()
    colunas = 0;
 }
 
-Matriz::Matriz(int l, int c, const double &valor)
+//contrutor 2
+Matriz::Matriz(int l, int c, const double &valor) : linhas(l), colunas(c)
 {
-    linhas = l;
-    colunas = c;
 
    mat = new int *[linhas];
    for(int i = 0;i < linhas; i++){
@@ -29,16 +29,7 @@ Matriz::Matriz(int l, int c, const double &valor)
      }
 }
 
-Matriz::~Matriz()
-{
-    for(int i = 0;i < linhas; i++){
-           // cout<<"coluna["<<i+1<<"] deletada"<<endl;
-        delete []mat[i];
-    }
-
-    delete []mat;
-}
-
+//construtor 3
 Matriz::Matriz(const Matriz &M){
 
     this->linhas = M.linhas;
@@ -55,6 +46,14 @@ Matriz::Matriz(const Matriz &M){
         }
      }
 
+}
+
+//Destrutor
+Matriz::~Matriz()
+{
+    for(int i = 0;i < linhas; i++){
+        delete []mat[i];}
+    delete []mat;
 }
 
 
@@ -101,8 +100,8 @@ void Matriz::ones(){
         }
     }
 
-//aqui sao as funcoes de sobrecarga
 
+//aqui sao as funcoes de sobrecarga
 Matriz &Matriz::operator=(const Matriz &a){
     this->linhas = a.linhas;
     this->colunas = a.colunas;
@@ -135,8 +134,6 @@ const Matriz Matriz::operator-(const Matriz &a) const{
             }
         }
     }
-    AUX.imprimir();
-
     return AUX;
 }
 
