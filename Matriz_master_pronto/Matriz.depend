@@ -1,0 +1,29 @@
+# depslib dependency file v1.0
+1541640312 source:d:\livros, exercícios e afins\poo\tp\matriz_2.0\main.cpp
+	<iostream>
+	<windows.h>
+	"Matriz.h"
+
+1541640193 d:\livros, exercícios e afins\poo\tp\matriz_2.0\matriz.h
+	<iostream>
+	<windows.h>
+
+1541640312 source:d:\livros, exercícios e afins\poo\tp\matriz_2.0\matriz.cpp
+	"Matriz.h"
+	<iostream>
+	<windows.h>
+
+1541647879 source:d:\livros, exercícios e afins\poo\tp\matriz_master\main.cpp
+	<iostream>
+	<windows.h>
+	"Matriz.h"
+
+1541645673 d:\livros, exercícios e afins\poo\tp\matriz_master\matriz.h
+	<iostream>
+	<windows.h>
+
+1541647296 source:d:\livros, exercícios e afins\poo\tp\matriz_master\matriz.cpp
+	"Matriz.h"
+	<iostream>
+	<windows.h>
+
