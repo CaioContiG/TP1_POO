@@ -50,7 +50,7 @@ int main()
     cout <<"Matriz W"<< W << endl;
     cout <<"Matriz Z"<< Z << endl;
 
-    cout<<"\nImprimindo as Matrizes mn---------------" << endl;
+    cout<<"\nImprimindo as Matrizes mn--------------------------------------------" << endl;
     cout <<"Matriz m"<<  m << endl;
     cout <<"Matriz m1"<< m1 << endl;
     cout <<"Matriz m2"<< m2 << endl;
@@ -58,7 +58,11 @@ int main()
     cout <<"Matriz m4"<< m4 << endl;
     cout <<"Matriz m5"<< m5 << endl;
 
-    cout << "\nTestes das funcoes--------------------------\n" << endl;
+    cout << "\nTestes das funcoes--------------------------------------------------\n" << endl;
+    cout << "Funcoes Gets, pega o numero de linhas e colunas da matriz A:" << endl;
+    int numeroLinhas = A.getRows();
+    int numeroColunas = A.getCols();
+    cout<< "Linhas: " << numeroLinhas << ", colunas: " << numeroColunas << endl;
 
     cout<< "matriz A na unit";
     A.unit();
@@ -72,29 +76,38 @@ int main()
     A.ones();
     cout << A;
 
-    cout<< "\ntestes das sobrecargas------------------\n" << endl;
+    cout<< "\ntestes das sobrecargas-------------------------------------------------------\n" << endl;
 
-    cout<<"Resultado da subtracao C = m - m2 - m1:";
+    cout << ">A e igual a transposta de m3 (sobrecarga ~)" << endl;
+    A=~m3;
+    cout <<"A matriz m3:" << m3;
+    cout <<"A matriz A:" << A;
+
+    cout << ">Multiplicacao por constante: A*= 2:";
+    A *= 2;
+    cout<<A;
+
+    cout<<">Resultado da subtracao C = m - m2 - m1:";
     C =  m - m2 -m1;
     cout << C;
 
-    cout<<"Resultado da soma C = m + m2 + m1:";
+    cout<<">Resultado da soma C = m + m2 + m1:";
     C =  m + m2 +m1;
     cout << C;
 
-    cout<<"Resultado da multiplicacao m5 = m3*m4:";
+    cout<<">Resultado da multiplicacao m5 = m3*m4:";
     m5 = m3*m4;
     cout << m5;
 
-    cout <<"Resultado de m1+=m2:";
+    cout <<">Resultado de m1+=m2:";
     m1+=m2;
     cout << m1;
 
-    cout <<"Resultado de m1-=m2:";
+    cout <<">Resultado de m1-=m2:";
     m1-=m2;
     cout << m1;
 
-    cout <<"Resultado de m1*=m2";
+    cout <<">Resultado de m1*=m2";
     m1 *= m2;
     cout << m1;
 
@@ -136,6 +149,9 @@ int main()
         cout<<"E diferente" << endl;
     }
 
+    cout<< "\n\nTeste do cin. Entre com valores para a matriz Z: " << endl;
+    cin >> Z;
+    cout<< "A matriz Z foi: " << Z;
 
     return 0;
 }

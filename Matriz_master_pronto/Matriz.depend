@@ -27,3 +27,17 @@
 	<iostream>
 	<windows.h>
 
+1541647296 source:d:\livros, exercícios e afins\poo\tp\matriz_master_pronto\matriz.cpp
+	"Matriz.h"
+	<iostream>
+	<windows.h>
+
+1541731171 d:\livros, exercícios e afins\poo\tp\matriz_master_pronto\matriz.h
+	<iostream>
+	<windows.h>
+
+1541732020 source:d:\livros, exercícios e afins\poo\tp\matriz_master_pronto\main.cpp
+	<iostream>
+	<windows.h>
+	"Matriz.h"
+

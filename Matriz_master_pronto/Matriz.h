@@ -20,8 +20,8 @@ class Matriz
         ~Matriz();
 
         //pegar linhas ou colunas
-        int getRows();
-        int getCols();
+        int getRows() const;
+        int getCols() const;
 
         //funcoes
         void unit();    //Matriz unidade
@@ -54,9 +54,8 @@ class Matriz
         friend ostream& operator<< (ostream &out,const Matriz& a);
 };
 
-inline int Matriz::getRows(){return linhas;}
-
-inline int Matriz::getCols(){return colunas;}
+inline int Matriz::getRows() const {return linhas;}
+inline int Matriz::getCols() const {return colunas;}
 
 inline int &Matriz::operator()(int lin,int col){return mat[lin-1][col-1];}
 #endif // MATRIZ_H
